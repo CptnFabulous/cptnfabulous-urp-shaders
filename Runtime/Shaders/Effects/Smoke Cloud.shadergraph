@@ -610,10 +610,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -384.0000305175781,
-            "y": 662.0,
-            "width": 109.00006103515625,
-            "height": 34.0
+            "x": -458.00006103515627,
+            "y": 696.0,
+            "width": 109.00003051757813,
+            "height": 34.00006103515625
         }
     },
     "m_Slots": [
@@ -870,8 +870,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -428.0,
-            "y": 628.0,
+            "x": -502.00006103515627,
+            "y": 628.0000610351563,
             "width": 153.00003051757813,
             "height": 34.0
         }
@@ -892,6 +892,20 @@
     "m_Property": {
         "m_Id": "b3e31a7fba574e3ba3ab3c607b605691"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BooleanMaterialSlot",
+    "m_ObjectId": "888f5c5139944aecaa621a8989f616d1",
+    "m_Id": 81288526,
+    "m_DisplayName": "Voronoi Noise",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Voronoi_Noise",
+    "m_StageCapability": 3,
+    "m_Value": true,
+    "m_DefaultValue": false
 }
 
 {
@@ -973,13 +987,22 @@
             "m_Id": "eb53bc89e9194fbaac3f380a958e37f7"
         },
         {
-            "m_Id": "f40472f4dbd34f2dafcc4988462b4ba7"
+            "m_Id": "c0d889eefef54447866df015321bd6d3"
         },
         {
             "m_Id": "f36e0202f12b49b28492ffbf3e187131"
         },
         {
+            "m_Id": "888f5c5139944aecaa621a8989f616d1"
+        },
+        {
+            "m_Id": "f40472f4dbd34f2dafcc4988462b4ba7"
+        },
+        {
             "m_Id": "c671784f0b3e464ea03c47c236a596e3"
+        },
+        {
+            "m_Id": "9c2a74d5a9794f7e9ce542656a1b00a5"
         }
     ],
     "synonyms": [],
@@ -994,12 +1017,16 @@
     "m_PropertyGuids": [
         "1c37d94f-b8a3-491d-8dab-9b7a6fb7f6e6",
         "eb050bba-2826-4ea5-ba65-43e0f46d2082",
-        "2ad90136-b1c4-48f1-98b8-6f71bacb20ae"
+        "2ad90136-b1c4-48f1-98b8-6f71bacb20ae",
+        "76e57535-d13d-4612-a92a-487defd36749",
+        "980be188-54df-4cef-83d6-3bb79f1f0150"
     ],
     "m_PropertyIds": [
         -918061810,
         -943510574,
-        -1117273136
+        -1117273136,
+        81288526,
+        870218827
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -1066,6 +1093,21 @@
         "e32": 0.0,
         "e33": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "9c2a74d5a9794f7e9ce542656a1b00a5",
+    "m_Id": 2,
+    "m_DisplayName": "R",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "R",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1201,10 +1243,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -413.0000305175781,
-            "y": 696.0,
-            "width": 138.00006103515626,
-            "height": 34.0
+            "x": -487.00006103515627,
+            "y": 662.0000610351563,
+            "width": 138.00003051757813,
+            "height": 33.99993896484375
         }
     },
     "m_Slots": [
@@ -1347,13 +1389,28 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "c0d889eefef54447866df015321bd6d3",
+    "m_Id": 870218827,
+    "m_DisplayName": "General Agitation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_General_Agitation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "c671784f0b3e464ea03c47c236a596e3",
     "m_Id": 1,
-    "m_DisplayName": "Out_Vector3",
+    "m_DisplayName": "RGB",
     "m_SlotType": 1,
     "m_Hidden": false,
-    "m_ShaderOutputName": "OutVector3",
+    "m_ShaderOutputName": "RGB",
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
