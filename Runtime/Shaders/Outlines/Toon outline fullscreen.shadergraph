@@ -218,9 +218,6 @@
     ],
     "m_StickyNoteDatas": [
         {
-            "m_Id": "3916e0efa4b540ba8e6829fa8458afa1"
-        },
-        {
             "m_Id": "709c180eec6a4a6bbd3a1dadb42f831e"
         },
         {
@@ -2298,26 +2295,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
-    "m_ObjectId": "3916e0efa4b540ba8e6829fa8458afa1",
-    "m_Title": "Scale needs to be an even number",
-    "m_Content": "Having it at '1' would theoretically result in more precise values, but it means the outline is uneven (biased towards top right)",
-    "m_TextSize": 0,
-    "m_Theme": 0,
-    "m_Position": {
-        "serializedVersion": "2",
-        "x": -2973.0,
-        "y": 209.0,
-        "width": 200.0,
-        "height": 160.0
-    },
-    "m_Group": {
-        "m_Id": "1357c099aa754ffc926aed723af5fb82"
     }
 }
 
