@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 7128129617987115377}
   - component: {fileID: 7971334334013826531}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
