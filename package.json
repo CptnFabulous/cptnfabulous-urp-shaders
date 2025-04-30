@@ -1,6 +1,6 @@
 {
 	"name": "com.cptnfabulous.shaders",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"displayName": "CptnFabulous' URP Shaders",
 	"description": "A bunch of shaders I've worked on, generic enough to be placed in a standalone package and released publicly to fill my portfolio.",
 	"unity": "2022.3",
