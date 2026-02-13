@@ -77,7 +77,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "b499e3c46f414dabb134bfb3791568f4"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -1834,6 +1838,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "b499e3c46f414dabb134bfb3791568f4",
+    "m_Title": "I made this by replicating a tutorial",
+    "m_Content": "I'll admit I don't actually fully understand how this works.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -510.0,
+        "y": -976.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
