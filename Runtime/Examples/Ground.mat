@@ -8,16 +8,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ground
-  m_Shader: {fileID: -6465566751694194690, guid: c80dde24229e76848956580016d9f5a0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 893fb69acc62783419d7baf5a423edb6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _CEILING_TO_FLOOR_TRANSITION_HARDCUT
+  - _FLOOR_TO_WALL_TRANSITION_HARDCUT
+  m_InvalidKeywords:
+  - _CEILING_TO_FLOOR_TRANSITION_TYPE_HARDCUT
+  - _FLOOR_TO_WALL_TRANSITION_TYPE_PERLINNOISE
+  - _TRANSITION_TYPE_VORONOINOISE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -29,6 +36,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ceiling:
+        m_Texture: {fileID: 2800000, guid: 7e31121a5ec123f47a776836525b9b6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -47,6 +58,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Floor:
+        m_Texture: {fileID: 2800000, guid: 7e31121a5ec123f47a776836525b9b6d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 6344bf96fbda94141a525046d088fb23, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -61,6 +76,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Toonshading_92aa1597102f442ab033fce783d5d544_Texture2D9b1f708d5d634ded933344d05c113168_132469051_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Wall:
+        m_Texture: {fileID: 2800000, guid: 7e31121a5ec123f47a776836525b9b6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -82,10 +105,19 @@ Material:
     - Vector1_94df2e631f844cf08ff99b844ec59a81: 0
     - Vector1_dcaa07fd38534cd8a9c999bf63fe91a7: 1
     - Vector1_fd45c9f775744fb4b6818bebd8cd6e4f: 0.002
+    - _AlphaClip: 1
+    - _AlphaToMask: 1
+    - _Blend: 0
     - _BumpScale: 1
+    - _CEILING_TO_FLOOR_TRANSITION: 0
+    - _CEILING_TO_FLOOR_TRANSITION_TYPE: 0
+    - _CastShadows: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FLOOR_TO_WALL_TRANSITION: 0
+    - _FLOOR_TO_WALL_TRANSITION_TYPE: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -98,14 +130,25 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Surface: 0
+    - _TRANSITION_TYPE: 2
+    - _Transition_Noise_Cell_Density: 5
+    - _Transition_Voronoi_Cell_Offset: 0
     - _UVSec: 0
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
     m_Colors:
     - Color_5b9877f949a64f08b1c5b3352cfa5a85: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - Color_d23dffed464e4119b78bcaebc88f1b81: {r: 0, g: 0, b: 0, a: 1}
+    - _Ceiling_Colour: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Floor_Colour: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    - _Forward_Axis: {r: 0, g: 0, b: 1, a: 0}
+    - _Up_axis: {r: 0, g: 1, b: 0, a: 0}
+    - _Wall_Colour: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7988561028361772607
 MonoBehaviour:
