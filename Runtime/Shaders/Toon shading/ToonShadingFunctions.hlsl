@@ -2,16 +2,33 @@
 #ifndef CUSTOM_LIGHTING_INCLUDED
 #define CUSTOM_LIGHTING_INCLUDED
 
-
-//#include “UnityInstancing.cginc”
+//HLSLPROGRAM
 
 //CGPROGRAM
+
+
+
+
+
 //#include "UnityCG.cginc"
+//#include "UnityInstancing.cginc"
+//#include "Packages/Universal RP/ShaderLibrary/Lighting.hlsl"
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+
 //TEXTURE2D(_CameraDepthTexture);
 //SAMPLER(sampler_CameraDepthTexture);
 
 TEXTURE2D(_CameraDepthNormalsTexture);
 SAMPLER(sampler_CameraDepthNormalsTexture);
+//#define TEXTURE2D(_CameraDepthNormalsTexture)
+//#define SAMPLER(sampler_CameraDepthNormalsTexture)
+
+/*
+CBUFFER_START(CameraDepthNormalsTexture)
+Texture2D _CameraDepthNormalsTexture;
+sampler sampler_CameraDepthNormalsTexture;
+CBUFFER_END
+*/
 
 
 
