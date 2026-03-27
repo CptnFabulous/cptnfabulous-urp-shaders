@@ -83,6 +83,7 @@ float3 ApplyToonLight(Light light, float3 normal, float3 viewDirection, float gl
     
     intensity *= light.distanceAttenuation;
     intensity *= light.shadowAttenuation;
+    intensity = saturate(intensity); // Ensure distance calculation can't result in intensity going above max intended value
     intensity = StepValue(intensity, 0.25);
     
     float3 lightColourValue = light.color * intensity;
