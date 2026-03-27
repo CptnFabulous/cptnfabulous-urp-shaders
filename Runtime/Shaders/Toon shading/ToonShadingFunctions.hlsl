@@ -54,8 +54,8 @@ float StepValue(float input, float range)
     //if (input == 0) return input;
     float output = input;
     output /= range;
-    output = round(output);
-    //output = ceil(output);
+    //output = round(output);
+    output = ceil(output);
     output *= range;
     return output;
 }
@@ -66,18 +66,25 @@ float3 ApplyToonLight(Light light, float3 normal, float3 viewDirection, float gl
     // Determine light intensity based on direction
     float lightDot = dot(light.direction, normal);
     float intensity = saturate(lightDot);
+    /*
     
     // This bit here is responsible for the cel-shading, by stepping the lights.
     //intensity = smoothstep(0, 0.01, intensity);
     //intensity = step(0.01, intensity);
     //intensity = StepValue(intensity, 1);
+    
     intensity = StepValue(intensity, 0.5);
     
     // This value would normally be good for distance, but it results in gradients.
     // Maybe I'll add it back in later once I figure out code for multiple steps
-    //intensity *= light.distanceAttenuation;
-    //intensity *= light.shadowAttenuation;
-    //intensity = StepValue(intensity, 0.5);
+    //intensity *= StepValue(light.distanceAttenuation, 0.25f);
+    //intensity *= StepValue(light.shadowAttenuation, 0.25f);
+    */
+    
+    intensity *= light.distanceAttenuation;
+    intensity *= light.shadowAttenuation;
+    intensity = StepValue(intensity, 0.25);
+    
     float3 lightColourValue = light.color * intensity;
 
 
