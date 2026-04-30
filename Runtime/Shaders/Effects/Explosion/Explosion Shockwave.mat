@@ -57,7 +57,7 @@ Material:
     - _Dust_Width: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shockwave_Maximum_Dot_Product: 0.2
+    - _Shockwave_Maximum_Dot_Product: 0.4
     - _SrcBlend: 5
     - _Surface: 1
     - _ZTest: 4
